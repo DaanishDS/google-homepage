@@ -29,7 +29,6 @@
   float: right;
   position: relative;
   right: 100px;
-  font-size: 14px !important;
   
 }
 
@@ -72,7 +71,7 @@ hr.solid {
   border-bottom: rgb(167, 163, 161);
   position: relative;
   top: 602px;
-  width: 100%;
+  width: 105%;
   opacity: 0.3;
 }
 
@@ -118,7 +117,7 @@ hr.solid {
   border-color: rgb(167, 163, 161);
   opacity: 0.3;
   border-radius: 25px;
-  border-top: 0.05px solid;
+  border-top: 0.1px solid;
   border-top-color: white;
   opacity: 0.3;
   border-radius: 25px;
@@ -132,7 +131,7 @@ hr.solid {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   position: absolute;
-  left: 50%;
+  left: 51%;
   transform: translateX(-130%);
   margin: 320px 0;
   padding:10px 10px;
@@ -143,6 +142,13 @@ hr.solid {
   top: 130px;
 }
 
+.search_box input:hover {
+ border: 1px solid;
+  border-color: rgb(212, 210, 209);
+  background-color: none;
+
+}
+
 .lucky input[type="submit"]{
   cursor: pointer;
   text-align: center;
@@ -150,7 +156,7 @@ hr.solid {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   position: absolute;
-  left: 50%;
+  left: 49%;
   transform: translateX(20%);
   margin: 320px 0;
   padding: 10px 10px;
@@ -161,6 +167,13 @@ hr.solid {
   
 }
 
+.lucky input:hover {
+  border: 1px solid;
+   border-color: rgb(212, 210, 209);
+   background-color: none;
+ 
+ }
+
 .mic {
   cursor: pointer;
   height: 14px;
@@ -170,8 +183,52 @@ hr.solid {
   top: 388px;
 }
 
-.mag {
+/* Tooltip text */
+.mic .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  /* Position the tooltip text */
   position: absolute;
-  left: 698px;
-  top: 393px;
+  z-index: 1;
+  width: 100px;
+  top: 100%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.mic:hover .tooltiptext {
+  visibility: visible;
+}
+
+.mic .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.mag {
+  float: left;
+  position: absolute;
+  right:520px;
+  bottom: -10px;
+}
+
+.leaf {
+  cursor: pointer;
+  position: absolute;
+  right: 360px;
+  top: 538px;
+
 }
