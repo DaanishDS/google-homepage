@@ -96,6 +96,7 @@ hr.solid {
   opacity: 0.28;
   border-radius:25px;
   padding: 5px;
+  padding-left: 2rem;
   width: 29.5%;
   outline: none;
   top: 377px;
@@ -127,7 +128,7 @@ hr.solid {
 .search_box input[type="submit"] {
   cursor: pointer;
   text-align: center;
-  color: black;
+  color:rgb(97, 93, 93);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   position: absolute;
@@ -152,7 +153,7 @@ hr.solid {
 .lucky input[type="submit"]{
   cursor: pointer;
   text-align: center;
-  color: black;
+  color:rgb(97, 93, 93);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   position: absolute;
@@ -164,6 +165,7 @@ hr.solid {
   background-color: white;
   border: none;
   top: 130px;
+  text-indent: 
   
 }
 
@@ -179,7 +181,7 @@ hr.solid {
   height: 14px;
   width: 14px;
   position: absolute;
-  right: 687px;
+  right: 657px;
   top: 388px;
 }
 
@@ -190,7 +192,7 @@ hr.solid {
   background-color: black;
   color: #fff;
   text-align: center;
-  padding: 5px 0;
+  padding: 5px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   /* Position the tooltip text */
@@ -198,7 +200,7 @@ hr.solid {
   z-index: 1;
   width: 100px;
   top: 100%;
-  left: 50%;
+  left: 18%;
   margin-left: -50px;
 }
 
@@ -221,14 +223,106 @@ hr.solid {
 .mag {
   float: left;
   position: absolute;
-  right:520px;
+  right:550px;
   bottom: -10px;
 }
 
 .leaf {
   cursor: pointer;
   position: absolute;
-  right: 360px;
+  right: 390px;
   top: 538px;
 
+}
+
+.apps {
+  cursor: pointer;
+  position: absolute;
+  left: 570px;
+  bottom: 355px;
+
+}
+
+/* Tooltip text */
+.apps .tooltiptextb {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  opacity: 1;
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  top: 100%;
+  left: 35%;
+  margin-left: -50px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.apps:hover .tooltiptextb {
+  visibility: visible;
+}
+
+.apps .tooltiptextb::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.account {
+  left: 45px;
+  top: 0px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  border: 6px solid #792b81;
+  line-height: 0.5;
+  border-radius: 50%;
+  
+}
+
+/* Tooltip text */
+.account .tooltiptextc {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  opacity: 1;
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  top: 100%;
+  left: 35%;
+  margin-left: -50px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.account:hover .tooltiptextc {
+  visibility: visible;
+}
+
+.account .tooltiptextc::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
 }
